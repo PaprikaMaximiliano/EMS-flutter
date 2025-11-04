@@ -45,7 +45,7 @@ class _MagicCounterState extends State<MagicCounter>
     // );
     _colorAnimation = ColorTween(
       begin: Colors.deepPurple,
-      end: Colors.amberAccent,
+      end: const Color.fromARGB(255, 78, 13, 191),
     ).animate(_animController);
   }
 
@@ -64,7 +64,7 @@ class _MagicCounterState extends State<MagicCounter>
     } else {
       _playAnimation();
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('✨ A magical effect occurred!'), ),
+        const SnackBar(content: Text('✨ A magical effect occurred!')),
       );
     }
     _controller.clear();
